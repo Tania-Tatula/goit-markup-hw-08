@@ -5,29 +5,22 @@
 
 .flexsvg {
     // width: 170px;
-    width: 210px;
+    width: calc((100% - 34px) / 2); 
     height: 90px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // border: 1px solid #AFB1B8;
+    // border-radius: 4px;
 
     // &:not(:last-child) {
     //     margin-right: 30px;
     // }
 
-    &:nth-child(2n+1) {
-        margin-right: 30px;
-    }
 
     &:not(:nth-last-child(-n + 2)) {
         margin-bottom: 30px;
     }
-  
-    &:hover,
-    &:focus {
-        border-color: $accent-color;
+
+    &:nth-child(2n+1) {
+        margin-right: 30px;
     }
 }
 
@@ -41,9 +34,21 @@
     height: 90px;
     width: 210px;
     background-color: inherit;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    // &:hover 
+    // &:focus {
+    //  border-color: red;   
+    // }
+}
+
+.flexsvg-linc:hover,
+.flexsvg-linc:focus {
+    border-color: $accent-color; 
 }
 
 .client-svg {
@@ -52,6 +57,6 @@
 
 .flexsvg-linc:hover .client-svg,
 .flexsvg-linc:focus .client-svg {
-   fill: $accent-color;
+    fill: $accent-color;
 }
 

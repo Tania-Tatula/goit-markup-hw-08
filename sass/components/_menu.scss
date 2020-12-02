@@ -1,31 +1,32 @@
-// .navigation {
-//     margin-right: auto;
-// }
+.navigation {
+    margin-right: auto;
+}
 
-// .menu {
-//     display: flex;
-//     align-items: center;
-// }
+.menu {
+    // display: flex;
+    display: block;
+    align-items: center;
+}
 
-// .menu-item:not(:last-child) {
-//     margin-right: 50px;
-// }
+.menu-item:not(:last-child) {
+    margin-right: 50px;
+}
 
-// .current {
-//     color: $accent-color;
+.current {
+    color: $accent-color;
 
 
-//  &::after {
-//     content: "";
-//     display: block;
-//     width: 100%;
-//     height: 4px;
-//     border-radius: 2px;
-//     background: $accent-color;
-//     margin-top: 28px;
-// }
-// }
+ &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: $accent-color;
+    margin-top: 28px;
+}
+}
 
-// li > .current {
-//     padding-bottom: 0;
-// }
+li > .current {
+    padding-bottom: 0;
+}

@@ -29,7 +29,7 @@ body {
   margin-left: auto;
 
   @media (min-widtn: 480px) {
-      width: 480px;
+      width: 100%;
   }
 }
 
@@ -61,5 +61,4 @@ p {
 .flexbox {
   display: flex;
   flex-wrap: wrap;
-   
 }
