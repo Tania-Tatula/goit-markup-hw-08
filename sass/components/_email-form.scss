@@ -1,5 +1,7 @@
 .footer-email-form input {
-    width: 358px;
+    display: block;
+    
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: inherit;
@@ -7,15 +9,35 @@
     border-radius: 4px;
 
     padding: 15px 16px;
-    margin-right: 12px;
+
+    @media screen and (max-width: 1199px) {
+        display: block;
+    }
+    
+
+    @include for-size(desktop) {
+        width: 358px;
+        margin-right: 12px;
+    }
 }
+
 .footer-email {
-    display: flex;
-    flex-direction: row;
+    display: block;
+    text-align: center;
+    
+    @include for-size(desktop) {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .footer-email-form input {
     color: $title-page-color;
+
+    @include for-size(mobile-only) {
+        margin-bottom: 20px;
+    }
+   
 }
 
 .footer-email-form input::placeholder {

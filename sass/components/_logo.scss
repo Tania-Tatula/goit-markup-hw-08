@@ -1,7 +1,11 @@
 .logo-color-header {
-    @include logo ($font-raleway, 700, 26px, 1.192, 0.03em);
+    @include logo ($font-raleway, 700, 24px, 1.66, 0.03em);
 
     color: $title-text-color;
+
+    @media screen and (max-width: 1199px) {
+        @include logo ($font-raleway, 700, 26px, 1.192, 0.03em);
+    }
 }
 
 .heder-logo {
@@ -17,5 +21,9 @@
 
 .logo-color-footer {
     color: $title-page-color;
-    @include logo ($font-raleway, 700, 26px, 1.192, 0.03em);
+    @include logo ($font-raleway, 700, 24px, 1.66, 0.03em);
+
+    @media screen and (max-width: 1199px) {
+        @include logo ($font-raleway, 700, 26px, 1.192, 0.03em);
+    }
 }
