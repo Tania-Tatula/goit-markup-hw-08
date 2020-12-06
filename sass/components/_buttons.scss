@@ -30,7 +30,7 @@
  &:focus {
     background-color: $title-page-color;
     color: $accent-color;
-}
+ }
 
  &:hover .footer-icon-svg,
  &:focus .footer-icon-svg {
@@ -38,24 +38,24 @@
  }
  }
 
-//  .btn-portfolio {
-//     font-weight: 500;
-//     line-height:1.62;
-//     letter-spacing: 0.03em;
-//     color: $title-text-color;
-//     background-color:#F5F4FA;
-//     border: none;
-//     padding: 6px 22px;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ .btn-portfolio {
+    font-weight: 500;
+    line-height:1.62;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    background-color:#F5F4FA;
+    border: none;
+    padding: 6px 22px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
-//  &:hover,
-//  &:focus {
-//     background-color: $accent-color;
-//     color: $title-page-color;
-// }
-// }
+ &:hover,
+ &:focus {
+    background-color: $accent-color;
+    color: $title-page-color;
+}
+}
 
 
 
@@ -73,6 +73,7 @@
     border-radius: 50%;
     background-color: $title-page-color;
     border: 1px solid #000000;
+
     }
 
 .modal-botton-icon {

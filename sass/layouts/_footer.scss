@@ -7,36 +7,26 @@
     padding-top: 60px;
 }
 
-// .bloc {
-//     display: flex;
-//     justify-content:start;
-// }
+.bloc {
+    display: flex;
+    justify-content:start;
+}
 
 .footer-bloc {
     min-width: 206px;
-    display: block;
-    text-align: center;
-    margin-top: 60px;
-    // margin-right: 70px;
+    margin-right: 70px;
 }
 
 .addres-bloc{
-    display: block;
-    text-align: center;
     min-width: 231px;      
 }
 
 .footer-form {
-    display: block;
-    text-align: center;
-    // min-width: 570px;
-    margin-top: 60px;
-
-    // margin-left: 23px;
+    min-width: 570px;
+    margin-left: 23px;
 }
 
 .social-network-title {
-    text-align: center;
     color: $title-page-color;
     margin-bottom: 20px;
 }

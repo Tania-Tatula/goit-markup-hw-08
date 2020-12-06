@@ -1,7 +1,5 @@
 .footer-email-form input {
-    display: block;
-    // width: 358px;
-    width: 450px;
+    width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: inherit;
@@ -11,17 +9,13 @@
     padding: 15px 16px;
     margin-right: 12px;
 }
-
 .footer-email {
-    display: block;
-    text-align: center;
-    // display: flex;
-    // flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .footer-email-form input {
     color: $title-page-color;
-    margin-bottom: 20px;
 }
 
 .footer-email-form input::placeholder {

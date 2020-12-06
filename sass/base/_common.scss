@@ -7,6 +7,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 2px solid red;
 }
 
 
@@ -18,18 +19,27 @@ body {
   letter-spacing: 0.03em;
   color: $primari-text-color;
   background-color: $bg-color; 
+
 }
 
 .container {
-
-//   width: 1200px;
+  // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
 
-  @media (min-widtn: 480px) {
-      width: 100%;
+  @include for-size(mobile){
+    width: 480px;
+  }
+
+
+  @include for-size(tablet) {
+    width: 768px;
+  }
+
+  @include for-size(desktop) {
+    width: 1200px;
   }
 }
 
@@ -54,11 +64,16 @@ p {
 }
 
 .section {
-//   padding-bottom: 94px;
-    padding-bottom: 60px;
+  padding-bottom: 60px;
+
+  @include for-size(desktop) {
+    padding-bottom: 94px;
+  }
 }
 
 .flexbox {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

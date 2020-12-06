@@ -11,68 +11,6 @@
       </head>
       
      <body>
-        <header class="bg-color-white">
-            <div class="container header-container">
-                <a href="./index.html" class="logo logo-color-header heder-logo">
-                    <span class="logo-color">Web</span>Studio
-                </a>
-                
-                <nav class="navigation">
-                        <ul class="list menu menu-tel">
-                                <li class="menu-item"> 
-                                    <a href="./index.html" class="link current menu-link">Студия</a>
-                            </li>
-                                <li class="menu-item"> 
-                                    <a href="./portfolio.html" class="link menu-link ">Портфолио</a>
-                            </li>
-                                <li class="menu-item"> 
-                                    <a href="" class="link menu-link">Контакты</a>
-                            </li>
-                        </ul>  
-                    
-                    <button class="menu-mini-btn">
-                        <svg class="menu-mini-btn-icon">
-                            <use href="./images/symbol-defs.svg#icon-close"></use>
-                        </svg>
-                    </button>
-                </nav>
-            </div>
-
-
-
-
-                <div class="telefon-menu">
-                    <ul class="list">
-                        <li class="telefon-menu-item"> 
-                            <a href="./index.html" class="link telefon-current telefon-menu-link">Студия</a>
-                    </li>
-                        <li class="telefon-menu-item"> 
-                            <a href="./portfolio.html" class="link telefon-menu-link ">Портфолио</a>
-                    </li>
-                        <li class="telefon-menu-item"> 
-                            <a href="" class="link telefon-menu-link">Контакты</a>
-                    </li>
-                </ul> 
-                <ul class="list">
-                    <li class="telefon-menu-contact header-svg">
-                        <a href="mailto:info@devstudio.com" class="link menu-link contacts header-svg-linc">info@devstudio.com
-                            <svg class="header-svg-icon" width="16px" height="12px" >
-                                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="telefon-menu-contact">
-                        <a href="tel:+380961111111" class="link menu-link contacts header-svg-linc">+38 096 111 11 11
-                            <svg class="header-svg-icon" width="10px" height="16px" >
-                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                            </svg>
-                        </a>
-                    </li>
-                 </ul> 
-                </div>
-        </header>
-    
-
         <!-- <header class="bg-color-white">
             <div class="container header-container">
                 <a href="./index.html" class="logo logo-color-header heder-logo">
@@ -93,7 +31,7 @@
                 </nav>
             
     
-                <ul class="list menu flexbox menu-tel">
+                <ul class="list menu flexbox">
                     <li class="menu-item header-svg">
                         <a href="mailto:info@devstudio.com" class="link menu-link contacts header-svg-linc">info@devstudio.com
                             <svg class="header-svg-icon" width="16px" height="12px" >
@@ -111,15 +49,13 @@
                  </ul>
             </div>
         </header> -->
-            
     
-
     <main>
         
         <div>
         <section class="bg-color-dark">
             <div class="overlay">
-                <div class="container hero-content">
+                <div class="hero-content">
                 <h1 class="page-title">Эффективные решения для вашего бизнеса</h1>
                     <button class="btn btn-studia" type="button" data-modal-open>
                             Заказать услугу
@@ -178,7 +114,7 @@
                                 </div>
 
                                 <div class="form-checkbox">
-                                    <label class="form-label"> 
+                                    <label class="form-label-checkbox"> 
                                         <input type="checkbox" name="policy" class="checkbox">
                                     <span class="lebel-checkbox"></span>
                                     Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
@@ -224,7 +160,7 @@
            </div>
         </section>
     
-        <section class="section">
+        <section class="section services">
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="list flexbox">
@@ -245,7 +181,7 @@
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="list flexbox">
-                    <li class="content-box command"><img src="./images/product_designer.jpg" alt="Игорь Демьяненко Product Designer" min-width="270"/>
+                    <li class="content-box command"><img src="./images/product_designer.jpg" alt="Игорь Демьяненко Product Designer" max-width="270"/>
                         <h3 class="section-title-mini workers-text">Игорь Демьяненко</h3>
                         <p lang="en" class="paragraf">Product Designer</p>
                         <ul class="list social-icons">
@@ -280,7 +216,7 @@
             
                         
                     </li>
-                    <li class="content-box command"><img src="./images/frontend_developer.jpg" alt="Ольга Репина Frontend Developer" min-width="270"/>
+                    <li class="content-box command"><img src="./images/frontend_developer.jpg" alt="Ольга Репина Frontend Developer" max-width="270"/>
                         <h3 class="section-title-mini workers-text">Ольга Репина</h3>
                         <p lang="en" class="paragraf">Frontend Developer</p>
                         <ul class="list social-icons">
@@ -313,7 +249,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="content-box command"><img src="./images/marketing.jpg" alt="Николай Тарасов Marketing" min-width="270"/>
+                    <li class="content-box command"><img src="./images/marketing.jpg" alt="Николай Тарасов Marketing" max-width="270"/>
                         <h3 class="section-title-mini workers-text">Николай Тарасов</h3>
                         <p lang="en" class="paragraf">Marketing</p>
                         <ul class="list social-icons">
@@ -346,7 +282,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="content-box command"><img src="./images/uidesigner.jpg" alt="Михаил Ермаков UI Designer" min-width="270"/>
+                    <li class="content-box command"><img src="./images/uidesigner.jpg" alt="Михаил Ермаков UI Designer" max-width="270"/>
                         <h3 class="section-title-mini workers-text">Михаил Ермаков</h3>
                         <p lang="en" class="paragraf">UI Designer</p>
                         <ul class="list social-icons">
@@ -386,7 +322,7 @@
         <section class="section">
             <div class="container customers">
                 <h2 class="section-title">Постоянные клиенты</h2>
-                <ul class="list flexbox">
+                <ul class="list flexbox clients">
                     <li class="flexsvg"> <a class="flexsvg-linc" href="">
                         <svg class="client-svg"  height= "49.22px" width="44.26px">
                             <use href="./images/symbol-defs.svg#icon-logo-1"></use>
@@ -422,7 +358,7 @@
         </section>
     </main>
 
-    <footer class="bg-color-dark-footer">
+    <!-- <footer class="bg-color-dark-footer">
         <div class="container footer-container bloc">
             <div class="footer-bloc addres-bloc">
             <a href="index.html#studia" class="logo logo-color-footer link-hf">
@@ -439,7 +375,7 @@
     
             <div class="footer-bloc">
                 <h2 class="section-title-caps title-caps-1 social-network-title">Присоединяйтесь</h2>
-                <ul class="list flexbox smart-footer-icons">
+                <ul class="list flexbox">
                     <li class="social-icons-item"> <a class="social-icons-linc footer-svg-linc" href="">
                         <svg class="footer-svg-icon">
                             <use href="./images/symbol-defs.svg#icon-instagram-1"></use>
@@ -489,7 +425,7 @@
         </div>
     
         
-    </footer>
+    </footer> -->
 
   <script src="./js/modal.js"></script>
   </body>

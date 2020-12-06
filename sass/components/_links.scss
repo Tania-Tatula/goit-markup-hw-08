@@ -5,30 +5,30 @@
     text-decoration: none;
 }
 
-// .link-hf {
-//     display: inline-block;
-//     margin-bottom: 20px;
-// }
+.link-hf {
+    display: inline-block;
+    margin-bottom: 20px;
+}
 
-// .link {
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.link {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-// &:hover,
-// &:focus { 
-//     color: $accent-color;
-// }
-// }
+&:hover,
+&:focus { 
+    color: $accent-color;
+}
+}
 
-// .menu-link,
-// .contacts {
-//     display: block;
-//     padding-top: 32px;
-//     padding-bottom: 32px;
+.menu-link,
+.contacts {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.142;
-//     letter-spacing: 0.02em;
-//     color: $title-text-color;
-// }
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+}

@@ -24,27 +24,33 @@
 .modal {
     position: absolute;
     width: 100%;
-    // max-width: 528px;
-    // height: 581px;
     max-width: 450px;
     height: 609px;
-    // top: 140px;
-    top: 93px;
+    top: 140px;
     left: 50%;
     transform: translate(-50%, 0);
     background-color: $title-page-color;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 4px;
+
+    @include for-size(desktop) {
+        max-width: 528px;
+        height: 581px;
+    }
 }
 
 .modal-form-title {
     padding: 40px 40px 12px 40px;
     
     font-size: 20px;
-    line-height: 1.17;
+    line-height: 1.5;
    
     color: $title-text-color;
     text-align: center;
+
+    @include for-size(desktop) {
+        line-height: 1.17;
+    }
 }
 
 .form {
@@ -103,7 +109,19 @@
 
 .form-label {
     display: block;
-    margin-bottom: 4px;    
+    margin-bottom: 4px;
+
+
+}
+
+.form-label-checkbox {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.66;
+    }
 }
 
 .svg-position{
@@ -143,8 +161,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-    padding-left: 12px;
+    margin-bottom: 30px;
+
+    @include for-size(desktop) {
+        padding-left: 12px;
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -173,7 +195,9 @@
 
 
 .lebel-checkbox {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     
     width: 16px;
     height: 15px;
