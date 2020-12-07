@@ -9,6 +9,8 @@
     opacity: 1;
     transition: all 0.3s;
 
+    overflow-y: scroll;
+
 &.is-hidden {
     visibility: hidden;
     opacity: 0;
