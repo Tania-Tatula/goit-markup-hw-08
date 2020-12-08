@@ -78,7 +78,7 @@ p {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .flexbox {
     display: flex;
     flex-wrap: wrap;
@@ -143,6 +143,8 @@ p {
   padding: 0;
   border: none;
   background-color: transparent;
+  padding-left: auto;
+  padding-right: auto;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -152,7 +154,7 @@ p {
   fill: #2196F3;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
@@ -278,7 +280,12 @@ p {
   margin-right: 88px;
   align-items: center;
   text-decoration: none;
-  margin-right: 93px;
+}
+
+@media (min-width: 1200px) {
+  .heder-logo {
+    margin-right: 93px;
+  }
 }
 
 .logo-color {
@@ -316,10 +323,12 @@ p {
   align-items: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .header-container {
+    position: relative;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid grey;
   }
 }
 
@@ -327,7 +336,7 @@ p {
   width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .menu-container {
     display: none;
     position: absolute;
@@ -341,7 +350,7 @@ p {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-container {
     display: flex;
   }
@@ -356,8 +365,28 @@ p {
   align-items: center;
 }
 
-.menu-item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 768px) {
+  .menu {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-item {
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .current {
