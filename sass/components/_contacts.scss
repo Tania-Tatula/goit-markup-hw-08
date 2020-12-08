@@ -1,6 +1,5 @@
 .contacts {
     color: $primari-text-color;
-
 }
 
 .header-svg-linc {
@@ -16,6 +15,12 @@
  &:hover .header-svg-icon,
  &:focus .header-svg-icon {
     fill: $accent-color;
+}
+
+&:not:not(:last-child) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+}
 }
 }
 

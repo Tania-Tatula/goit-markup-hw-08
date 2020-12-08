@@ -32,6 +32,9 @@
     letter-spacing: 0.02em;
     color: $title-text-color;
 
+    @include for-size(mobile-only){
+        display: inline-block;
+    }
 
     @media screen and (min-width: 768px) and (max-width: 1199px){
         font-size: 12px;
