@@ -323,14 +323,16 @@ p {
   }
 }
 
+.menu-container {
+  width: 100%;
+}
+
 @media screen and (max-width: 767px) {
   .menu-container {
-    width: 100%;
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
     background: #FFFFFF;
     z-index: 200;
   }
@@ -376,7 +378,7 @@ li > .current {
   padding-bottom: 0;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-tablet {
     max-width: 142px;
     margin-left: 84px;
@@ -385,13 +387,13 @@ li > .current {
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-tablet:first-child {
     margin-bottom: 10px;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-svg-linc {
     padding: 0;
   }
