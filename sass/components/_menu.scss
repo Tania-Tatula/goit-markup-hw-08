@@ -1,6 +1,6 @@
 .menu-container {
     width: 100%;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         display: none;
         position: absolute;
         top: 100%;
@@ -25,34 +25,23 @@
 }
 
 .menu {
-    @media screen and (max-width: 768px) {
-        display: block;
-        align-items: center;
-        justify-content: center;
-        margin-right: 0;
-        
+    @media screen and (max-width: 767px) {
+      display: block;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0;
     }
-
+  
     display: flex;
     align-items: center;
-}
+  }
+  
 
-.menu-item {
-    @media screen and (max-width: 768px) {
-        margin-right: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  .menu-item:not(:last-child) {
+    @media screen and (min-width: 768px) {
+      margin-right: 50px;
     }
-}
-
-
-.menu-item:not(:last-child) {
-    @media screen and (min-width: 768px){
-    margin-right: 50px;
-}
-}
-
+  }
 .current {
     color: $accent-color;
 
@@ -74,21 +63,22 @@ li > .current {
 
 .contact-tablet {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        max-width: 142px;
-        margin-left: 84px;
-        margin-top: 21px;
-        margin-bottom: 21px;
+      max-width: 142px;
+      margin-left: 84px;
+      margin-top: 21px;
+      margin-bottom: 21px;
     }
+  
+    &:first-child {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  
 
-&:first-child {
+  .header-svg-linc {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-            margin-bottom: 10px;
-        }
+      padding: 0;
     }
-}
-
-.header-svg-linc {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        padding: 0;
-    }
-}
+  }

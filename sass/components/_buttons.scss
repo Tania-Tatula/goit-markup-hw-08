@@ -15,8 +15,6 @@
      padding: 0;
      border: none;
      background-color: transparent;
-     padding-left: auto;
-    padding-right: auto;
 
      transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -26,7 +24,7 @@
        fill: $accent-color;
    }
 
-     @media screen and (min-width: 768px) {
+     @media screen and (min-width: 767px) {
         display: none;
     }
  }
