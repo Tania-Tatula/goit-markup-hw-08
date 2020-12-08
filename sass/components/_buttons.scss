@@ -7,16 +7,34 @@
  }
 
  .menu-button {
-     display: inline-flex;
-     margin: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 10px;
+     margin-bottom: 10px;
      padding: 0;
      border: none;
      background-color: transparent;
+
+     transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover .menu-button-svg,
+    &:focus .menu-button-svg {
+       fill: $accent-color;
+   }
 
      @media screen and (min-width: 767px) {
         display: none;
     }
  }
+  
+.menu-button-svg {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+}
+
 
  .menu-button .icon-close {
      display: none;

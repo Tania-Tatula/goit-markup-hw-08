@@ -118,6 +118,34 @@ p {
   color: #212121;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-link,
+  .contacts {
+    font-size: 12px;
+    line-height: 1.166;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-tablet {
+    margin-left: 84px;
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-tablet:first-child {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-svg-linc {
+    padding: 0;
+  }
+}
+
 .btn {
   display: inline-block;
   font-family: inherit;
@@ -127,17 +155,33 @@ p {
 }
 
 .menu-button {
-  display: inline-flex;
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 0;
   border: none;
   background-color: transparent;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-button:hover .menu-button-svg,
+.menu-button:focus .menu-button-svg {
+  fill: #2196F3;
 }
 
 @media screen and (min-width: 767px) {
   .menu-button {
     display: none;
   }
+}
+
+.menu-button-svg {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
 }
 
 .menu-button .icon-close {
@@ -251,9 +295,10 @@ p {
 
 .heder-logo {
   display: inline-block;
-  margin-right: 93px;
+  margin-right: 88px;
   align-items: center;
   text-decoration: none;
+  margin-right: 93px;
 }
 
 .logo-color {
@@ -283,12 +328,19 @@ p {
   position: relative;
   background: #FFFFFF;
   border-bottom: 1px solid #ECECEC;
-  min-height: 80px;
+  min-height: 60px;
 }
 
 .header-container {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -380,7 +432,6 @@ li > .current {
 .overlay {
   position: relative;
   height: 400px;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-img-min.jpg);

@@ -10,9 +10,12 @@
 
 .heder-logo {
     display: inline-block;
-    margin-right: 93px;
+    margin-right: 88px;
     align-items: center;
     text-decoration: none;
+
+    @include for-size(desktop) {}
+    margin-right: 93px;
 }
 
 .logo-color {
