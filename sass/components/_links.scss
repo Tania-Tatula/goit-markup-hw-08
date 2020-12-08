@@ -37,24 +37,3 @@
         line-height: 1.166;
     }
 }
-
-
-.contact-tablet {
-    @include for-size(tablet) {
-        margin-left: 84px;
-        margin-top: 21px;
-        margin-bottom: 21px;
-    }
-
-&:first-child {
-        @include for-size(tablet) {
-            margin-bottom: 10px;
-        }
-    }
-}
-
-.header-svg-linc {
-    @include for-size(tablet) {
-        padding: 0;
-    }
-}
