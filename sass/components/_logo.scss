@@ -14,8 +14,9 @@
     align-items: center;
     text-decoration: none;
 
-    @include for-size(desktop) {}
+    @include for-size(desktop) {
     margin-right: 93px;
+}
 }
 
 .logo-color {
