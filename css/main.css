@@ -118,10 +118,11 @@ p {
   color: #212121;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .menu-link,
   .contacts {
     display: inline-block;
+    padding-bottom: 8px;
   }
 }
 
@@ -379,13 +380,17 @@ p {
   margin-right: auto;
 }
 
-@media (max-width: 767px) {
+.menu {
+  margin-top: 28px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
   .menu {
     display: block;
-    align-items: center;
-    justify-content: center;
-    margin-right: 0;
-    align-items: center;
   }
 }
 
@@ -401,12 +406,10 @@ p {
   margin-left: 84px;
 }
 
-@media (max-width: 767px) {
-  .menu-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-item-td:not(:last-child) {
@@ -431,6 +434,12 @@ p {
   border-radius: 2px;
   background: #2196F3;
   margin-top: 28px;
+}
+
+@media screen and (max-width: 768px) {
+  .current::after {
+    margin-top: 8px;
+  }
 }
 
 li > .current {
