@@ -6,7 +6,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 2px solid red;
 }
 
 body {
@@ -169,9 +168,13 @@ p {
 }
 
 .menu-button-svg {
-  display: inline-flex;
+  display: flex;
+  text-align: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
+  padding-left: calc((100% - 24px) / 2);
+  padding-right: calc((100% - 24px) / 2);
 }
 
 .menu-button .icon-close {
@@ -180,10 +183,19 @@ p {
 
 .menu-button.is-open .icon-close {
   display: block;
+  padding-left: calc((100% - 18.67px) / 2);
+  padding-right: calc((100% - 18.67px) / 2);
 }
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.icon-menu {
+  display: block;
+  width: 24px;
+  height: 16px;
+  padding-left: calc((100% - 24px) / 2);
 }
 
 .btn-studia {
@@ -519,7 +531,8 @@ li > .current {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-img-min.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/hero.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -528,6 +541,21 @@ li > .current {
 @media (min-width: 1200px) {
   .overlay {
     height: 600px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/hero-tablet.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/hero-desktop.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desktop.jpg");
+    background-repeat: no-repeat;
   }
 }
 

@@ -32,9 +32,13 @@
  }
   
 .menu-button-svg {
-    display: inline-flex;
+    display: flex;
+    text-align: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
+    padding-left: calc((100% - 24px) / 2);
+    padding-right: calc((100% - 24px) / 2);
 }
 
 
@@ -44,11 +48,21 @@
 
  .menu-button.is-open .icon-close {
     display: block;
+    padding-left: calc((100% - 18.67px) / 2);
+    padding-right: calc((100% - 18.67px) / 2);
  }
 
  .menu-button.is-open .icon-menu {
      display: none;
  }
+
+ .icon-menu {
+    display: block;
+    width: 24px;
+    height: 16px;
+    padding-left: calc((100% - 24px) / 2);
+ }
+
 
   .btn-studia {
     position: relative;
