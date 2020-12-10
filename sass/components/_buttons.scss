@@ -7,23 +7,21 @@
  }
 
  .menu-button {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin-top: 10px;
-     margin-bottom: 10px;
+     display: inline-flex;
+     margin: 0;
      padding: 0;
      border: none;
      background-color: transparent;
-     padding-left: auto;
-    padding-right: auto;
-
+     margin-top: 10px;
+     margin-bottom: 10px;
+     
      transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover .menu-button-svg,
-    &:focus .menu-button-svg {
-       fill: $accent-color;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
+     &:hover .menu-button-svg,
+     &:focus .menu-button-svg {
+        fill: $accent-color;
+     
    }
 
      @media screen and (min-width: 768px) {
@@ -37,8 +35,6 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    padding-left: calc((100% - 24px) / 2);
-    padding-right: calc((100% - 24px) / 2);
 }
 
 
@@ -48,20 +44,19 @@
 
  .menu-button.is-open .icon-close {
     display: block;
-    padding-left: calc((100% - 18.67px) / 2);
-    padding-right: calc((100% - 18.67px) / 2);
+    
  }
 
  .menu-button.is-open .icon-menu {
      display: none;
  }
 
- .icon-menu {
-    display: block;
-    width: 24px;
-    height: 16px;
-    padding-left: calc((100% - 24px) / 2);
- }
+//  .icon-menu {
+//     display: block;
+//     width: 24px;
+//     height: 16px;
+//     padding-left: calc((100% - 24px) / 2);
+//  }
 
 
   .btn-studia {
