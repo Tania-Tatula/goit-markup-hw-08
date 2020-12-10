@@ -10,7 +10,6 @@
     align-items: center;
 
     @media screen and (max-width: 768px) {
-        position: relative;
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid grey;
