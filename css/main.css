@@ -1471,6 +1471,7 @@ address {
   margin-right: 24px;
   margin-top: 20px;
   margin-bottom: 20px;
+  height: 100%;
   z-index: 99;
 }
 
