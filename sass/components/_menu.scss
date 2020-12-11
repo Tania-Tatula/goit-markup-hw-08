@@ -43,7 +43,8 @@
     align-items: center;
     
     @media screen and (max-width: 767px) {
-        display: block;        
+        display: block; 
+
     }
 }
 
@@ -111,6 +112,7 @@ li > .current {
 &:first-child {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
             margin-bottom: 10px;
+
         }
     }
 }
@@ -118,6 +120,7 @@ li > .current {
 .header-svg-linc {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         padding: 0;
+        padding-bottom: 60px;
     }
 }
 

@@ -460,6 +460,7 @@ li > .current {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-svg-linc {
     padding: 0;
+    padding-bottom: 60px;
   }
 }
 
@@ -1452,10 +1453,10 @@ address {
 
 .portfolio-text {
   display: block;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   height: 100%;
   z-index: 99;
 }
