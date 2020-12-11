@@ -399,7 +399,20 @@ p {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-left: 84px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-decstop {
+    margin-top: 21px;
+    margin-bottom: 21px;
+    margin-left: 84px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-decstop:first-child {
+    margin-bottom: 10px;
+  }
 }
 
 .menu-item {
@@ -445,7 +458,7 @@ li > .current {
 @media screen and (max-width: 767px) {
   .contact-telefon {
     margin-top: 21px;
-    margin-bottom: 21px;
+    margin-bottom: 52px;
     font-size: 18px;
     line-height: 1.66;
   }
@@ -460,14 +473,12 @@ li > .current {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-svg-linc {
     padding: 0;
-    padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
   }
 }
 

@@ -58,7 +58,19 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    // margin-left: 84px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 21px;
+    margin-bottom: 21px;
     margin-left: 84px;
+}
+   
+    &:first-child {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+          margin-bottom: 10px;
+        }
+    }
 }
 
 .menu-item {
@@ -104,7 +116,7 @@ li > .current {
 .contact-telefon {
     @media screen and (max-width: 767px) {
         margin-top: 21px;
-        margin-bottom: 21px;
+        margin-bottom: 52px;
         font-size: 18px;
         line-height: 1.66;
     }
@@ -120,13 +132,11 @@ li > .current {
 .header-svg-linc {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         padding: 0;
-        padding-bottom: 60px;
     }
 }
 
 .contacts {
      @media screen and (min-width: 768px) and (max-width: 1199px){
-        padding-top: 0;
-        padding-bottom: 0;
+        padding: 0;
     }
 }
